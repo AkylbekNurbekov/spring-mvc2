@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GetAllCars</title>
+</head>
+<body>
+<div th:each="car : ${cars1}">
+    <a th:text="${car.id}">car</a>
+    <a th:text="${car.name}">car</a>
+    <a th:text="${car.color}">car</a>
+
+</div>
+</body>
+</html>
